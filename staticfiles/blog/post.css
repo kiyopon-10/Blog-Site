@@ -1,0 +1,38 @@
+.post{
+    text-align: center;
+  }
+
+  .post a{
+    text-decoration: none;
+  }
+
+  .post img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    }
+
+  .post-content h3,p{
+    color: black;
+  }
+
+  .post-content :hover{
+    color: #6305dd;
+  }
+
+  
+  #about {
+    text-align: center;
+    padding: 3rem;
+    background-color: #e48900;
+    margin-top: 5rem;
+  }
+  
+  #about h2 {
+    font-size: 3rem;
+  }
+  
+  #about p {
+    font-size: 1.5rem;
+    color: #353535;
+  }

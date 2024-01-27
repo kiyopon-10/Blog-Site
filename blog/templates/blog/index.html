@@ -1,0 +1,36 @@
+{%extends "base.html"%}
+{%load static%}
+
+{% block title %} My Blog {%endblock%}
+
+{%block css_files%}
+    <link rel="stylesheet" href="{%static "blog/index.css"%}" />
+    <link rel="stylesheet" href="{%static "blog/post.css"%}" />
+{%endblock%}
+
+{%block content %}
+
+<section id="welcome">
+    <header>
+        <img src="{% static "blog/images/dp.jpg"%}" alt="Barshan - The author of this blog">
+        <h2>BARSHAN'S BLOG</h2>
+    </header>
+    <p>Hi I am Barshan and i love to blog about tech and worldy affairs.</p>
+</section>
+
+<section id="latest-posts">
+    <h2>My Latest Thoughts</h2>
+    <ul>
+        {% for post in posts%}
+        {% include "blog/includes/post.html" %}
+        {%endfor%}
+    </ul>
+</section>
+
+<section id="about">
+    <h2>What do I do?</h2>
+    <p>I love programming and i love exploring new techs in general.</p>
+    <p>I also love music in general and i love to sing and play the guitar.</p>
+</section>
+
+{%endblock%}
